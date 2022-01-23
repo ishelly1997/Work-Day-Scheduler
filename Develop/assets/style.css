@@ -14,6 +14,9 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
 }
+textarea p {
+
+}
 
 .jumbotron {
   text-align: center;
