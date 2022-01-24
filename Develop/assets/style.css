@@ -29,7 +29,7 @@ textarea{
   white-space: pre-wrap;
 }
 
-.time-block{
+.timeblock{
   text-align: center;
   border-radius: 15px;
 }
@@ -48,7 +48,7 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #a53b3b;
   color: white;
 }
 
@@ -57,7 +57,7 @@ textarea{
   color: white;
 }
 
-.future {
+textarea .future {
   background-color: #77dd77;
   color: white;
 }
