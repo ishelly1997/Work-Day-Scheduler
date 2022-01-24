@@ -12,7 +12,22 @@ var myStorage = window.localStorage;
 var m = moment();
 //document.createAttribute(textarea)
 //var Textcontent = textarea user.input;
+$(document).ready(function () {
+  
 
+$(".time-block").each(function () {
+  var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+  
+  if (currentTime == blockTime) {
+    $(this).addClass("present");
+  } else if (currentTime < blockTime) {
+    $(this).removeClass("present");
+    $(this).addClass("future");
+  } else (currentTime > blockTime); {
+    $(this).removeClass("future");
+    $(this).addClass("past");
+  }
+});
 $(document).ready(function() {
   $(".btn-info").on("click", function() {
     var eventDetails =
@@ -36,19 +51,5 @@ $("#hour13 .description").val(localStorage.getItem("hour13"));
 $("#hour14 .description").val(localStorage.getItem("hour14"));
 $("#hour15 .description").val(localStorage.getItem("hour15"));
 $("#hour16 .description").val(localStorage.getItem("hour16"));
-
-//timeTracker();  
-})
-  //display current date and time at p lead
-//function currentTime() {
-
- // $(".time-block").each(function () {
- //   var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-//}
-
-
-//WHEN I click the save button for that time block, the text for that event is saved in local storage
-
-
-//WHEN I refresh the page, the saved events persist
-//append user input to display within the event description textarea
+ 
+})})
